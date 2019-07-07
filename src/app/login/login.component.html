@@ -1,0 +1,19 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+   
+    <form [formGroup]="form" (submit)="onLogin()">
+      <input type="text" id="username" class="fadeIn second" 
+      formControlName="username" name="username" placeholder="username">
+      <input type="password" id="password" class="fadeIn third"
+      formControlName="password" name="password" placeholder="password">    
+
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" routerLink="/register">Register</a>
+    </div>
+
+  </div>
+</div>
